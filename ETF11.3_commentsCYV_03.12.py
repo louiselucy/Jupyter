@@ -19,7 +19,7 @@ df.head() #good way to see a glimpse of the dataset
 
 # In[94]:
 
-
+# What do you use this fuction for?
 pd.set_option("display.max_rows", None, "display.max_columns", None)
 print(df)
 
