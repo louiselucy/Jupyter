@@ -196,7 +196,7 @@ print(etf_list)
 
 
 
-
+# This part below will only work when you're on Jupyter notebook.
 
 # Also there are some shortcuts that you might want to know like when you press B, it creates a new box below the one you're in.
 
