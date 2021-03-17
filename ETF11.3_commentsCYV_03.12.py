@@ -203,3 +203,28 @@ print(etf_list)
 # You can press **M** after that to select Markdown and have text in your jupyter lab as Im doing now.
 
 # To activate edition of a block just *press enter*
+
+
+
+#hash the datetime
+
+
+import pandas as pd
+import hashlib
+import random
+import string
+d0 = pd.read_csv('/Users/lobe/Desktop/OneDrive/merged_goldeikon-5y-1D-10symbols-20210207.csv')
+d1 = d0[['datetime','close','amount','ex_symbol']].dropna() 
+display(d1.head())
+
+tmplist = list(set(d1['datetime']))
+
+mapping1 = {i : (''.join(random.choice(string.hexdigits) for i in range(12)))+i+(''.join(random.choice(string.hexdigits) for i in range(12)))  for i in tmplist}
+
+d2 = d1.copy()
+
+d2['newname'] = [mapping1[i] for i in d2['datetime']]
+display(d2.head())
+
+d2['hash'] = [hashlib.sha1(str.encode(str(i))).hexdigest() for i in d2['newname']]
+display(d2.head())
