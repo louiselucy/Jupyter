@@ -207,7 +207,7 @@ print(etf_list)
 
 
 #hash the datetime
-
+# source https://medium.com/luckspark/hashing-pandas-dataframe-column-with-nonce-763a8c23a833
 
 import pandas as pd
 import hashlib
