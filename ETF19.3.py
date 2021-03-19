@@ -106,7 +106,7 @@ df["ex_symbol"].value_counts()
 # In[85]:
 
 
-df = pd.DataFrame( {     
+exsymbol_df = pd.DataFrame( {     
 "exsymbol" : ['l_gbsx', 'l_xgld', 'l_igln', 'l_sgld', 'l_phau', 'l_sgbs', 's_csgold', 's_zgldus', 's_sgld', 's_xgld'] ,
 "value" : [1289, 1289, 1289, 1289, 1289, 1280, 1279, 1279, 1005, 680]})
 df.groupby(['exsymbol']).sum()
@@ -117,7 +117,7 @@ df
 
 
 
-
+exsymbol_df.plot.line()
 
 # # Matplotlib histogram and linechart
 
