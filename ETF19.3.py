@@ -133,18 +133,8 @@ df.plot.line(x ='ex_symbol', y ='amount')
 data.plot.line(x ='datetime', y ='amount')
 
 
-# In[136]:
 
 
-fig = px.line(df, x = 'datetime', y = 'amount', title='Amount / Time')
-fig.show()
-
-
-# In[137]:
-
-
-fig = px.histogram(df, x = 'ex_symbol', y = 'amount', title='Ex symbol Amount')
-fig.show()
 
 
 # Also there are some shortcuts that you might want to know like when you press B, it creates a new box below the one you're in.
