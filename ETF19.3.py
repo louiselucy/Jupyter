@@ -143,7 +143,7 @@ fig.show()
 # In[137]:
 
 
-fig = px.histogram(df, x = 'ex_symbol', y = 'amount', title='Exchange Amount')
+fig = px.histogram(df, x = 'ex_symbol', y = 'amount', title='Ex symbol Amount')
 fig.show()
 
 
