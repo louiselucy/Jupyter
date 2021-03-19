@@ -119,7 +119,7 @@ df
 
 exsymbol_df.plot.line()
 
-# # Matplotlib histogram and linechart
+ 
 
 # In[134]:
 
@@ -134,7 +134,7 @@ data.plot.line(x ='datetime', y ='amount')
 
 
 
-
+# # Matplotlib
 
 
 # Also there are some shortcuts that you might want to know like when you press B, it creates a new box below the one you're in.
