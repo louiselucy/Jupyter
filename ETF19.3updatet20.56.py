@@ -214,8 +214,17 @@ fig = px.histogram(df, x = 'ex_symbol', y = 'amount', title='Exchange Amount')
 fig.show()
 
 
+
+#MESSAGE
+#Can add files like this, updates versions, can invite you to see the code in colab. Have not got an githu version for jupyterlab.
+#will move over to jupyterlab now.
+
+
 # Also there are some shortcuts that you might want to know like when you press B, it creates a new box below the one you're in.
 
 # You can press **M** after that to select Markdown and have text in your jupyter lab as Im doing now.
 
 # To activate edition of a block just *press enter*
+
+
+
